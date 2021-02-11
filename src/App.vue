@@ -1,28 +1,81 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <div>
+    <MenuButton />
+    <TopicSection />
+    <full-page ref="fullpage" :options="options" id="fullpage">
+
+      <SectionWelcome />
+      
+      <SectionSkills />
+      
+      <SectionExperience />
+      
+      <SectionEducation />
+      <section class="section section--contact">
+        Section Contact
+      </section>
+  </full-page>
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MenuButton from "./components/MenuButton"
+import TopicSection from "./components/TopicSection"
+
+import SectionWelcome from "./components/sections/SectionWelcome"
+import SectionSkills from "./components/sections/SectionSkills"
+import SectionExperience from "./components/sections/SectionExperience"
+import SectionEducation from "./components/sections/SectionEducation"
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MenuButton,
+    TopicSection,
+    SectionWelcome,
+    SectionSkills,
+    SectionExperience,
+    SectionEducation
   }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  body {
+    background-color: #E82424;
+    color: white;
+    font-weight: bolder;
+    font-size: 72px;
+  }
+
+  * { font-family: "Segoe UI" !important; }
+
+  .section { text-align: center; }
+
+  .section--contact { background: #292929; }
+
+  .section__title {
+    font-size: 108px;
+  }
+
+  .section__subtitle {
+    font-size: 44px;
+  }
+
+  .topic-section {
+    position: absolute;
+    left: 80px;
+    bottom: 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .t-bold { font-weight: 800; }
+
+  .t-thin { font-weight: 200; }
+
+  .t-italic { font-style: italic; }
 </style>
