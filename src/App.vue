@@ -11,9 +11,8 @@
       <SectionExperience />
       
       <SectionEducation />
-      <section class="section section--contact">
-        Section Contact
-      </section>
+      
+      <SectionContact />
   </full-page>
 </div>
 </template>
@@ -26,16 +25,19 @@ import SectionWelcome from "./components/sections/SectionWelcome"
 import SectionSkills from "./components/sections/SectionSkills"
 import SectionExperience from "./components/sections/SectionExperience"
 import SectionEducation from "./components/sections/SectionEducation"
+import SectionContact from "./components/sections/SectionContact"
 
 export default {
   name: 'App',
   components: {
     MenuButton,
     TopicSection,
+
     SectionWelcome,
     SectionSkills,
     SectionExperience,
-    SectionEducation
+    SectionEducation,
+    SectionContact
   }
 }
 </script>
