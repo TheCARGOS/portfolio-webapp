@@ -128,7 +128,7 @@ export default {
                 {
                     imgUrl: "https://ionelaipatioaei.com/logos/mongodb.png",
                     name: "MONGODB",
-                    level: "ITERMEDIATED"
+                    level: "INTERMEDIATED"
                 },
                 {
                     imgUrl: "https://res-1.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1478529687/zaeoysnccrafp3ikx5or.png",
