@@ -54,6 +54,8 @@ export default {
 
   .section { text-align: center; }
 
+  .container { max-width: 1500px; padding: 0 50px; margin: 0 auto; }
+
   .section--contact { background: #292929; }
 
   .section__title {
