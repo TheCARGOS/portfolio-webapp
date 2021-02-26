@@ -16,7 +16,7 @@
             <div class="modal"
                     :clickToClose="true"
                     :adaptive="true">
-                <img class="modal__img" :src="isSelected.src" alt="">
+                <!-- <img class="modal__img" :src="isSelected.src" alt=""> -->
             
                 <div class="modal__container">
                     <h2 class="modal__title t-bold" v-text="isSelected.name"></h2>
