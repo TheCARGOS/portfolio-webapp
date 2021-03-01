@@ -1,4 +1,4 @@
-# portfolio-webapp
+# portfolio-webapp project abandoned because of new design was made.
 
 ## Project setup
 ```
